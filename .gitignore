@@ -1,0 +1,9 @@
+_ReSharper.YoutubeStreaming
+packages
+[Bb]in
+[Oo]bj
+*.suo
+*.user
+App_Data
+node_modules
+.DS_Store
