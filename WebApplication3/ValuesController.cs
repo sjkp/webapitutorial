@@ -8,11 +8,12 @@ using System.Web.Http.Cors;
 
 namespace WebApplication3
 {
-    [EnableCors("*","*","*")]
-    [RoutePrefix("api/v1/values")]
+    [RoutePrefix("api/v1")]
+    [EnableCors("*","*","*")]    
     public class ValuesController : ApiController
     {
         // GET api/<controller>
+        [HttpGet("values")]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
